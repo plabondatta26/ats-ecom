@@ -19,4 +19,4 @@ class CartModel(models.Model):
     quantity = models.CharField(max_length=100, blank=False, null=False)
 
     def __str__(self):
-        return self.user + ' ' + self.quantity
+        return self.user.username + ' ' + str(self.quantity)

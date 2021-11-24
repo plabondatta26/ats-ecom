@@ -15,14 +15,14 @@ class UserViewSet(viewsets.ModelViewSet):
 
 
 class ProductViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated, ]
+    # permission_classes = [IsAuthenticated, ]
     queryset = ProductModel.objects.all()
     serializer_class = ProductSerializer
     parser_classes = (JSONParser, FormParser, MultiPartParser)
 
 
 class CartViewSet(viewsets.ModelViewSet):
-    permission_classes = [IsAuthenticated, ]
+    # permission_classes = [IsAuthenticated, ]
     queryset = CartModel.objects.all()
     serializer_class = CartSerializer
 
